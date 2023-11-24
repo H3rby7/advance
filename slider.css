@@ -99,10 +99,14 @@ a.slide__next,
   pointer-events: none;
 }
 
-.slider__nav {
-  box-sizing: border-box;
+.slider__controls {
   position: absolute;
   bottom: 5%;
+  width: 100%;
+}
+
+.slider__nav {
+  box-sizing: border-box;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -147,4 +151,16 @@ a.slide__next,
   border-radius: 50%;
   top: 0.15em;
   left: 1em;
+}
+
+.slider__label {
+  width: 10em;
+}
+.slider__label:first-child {
+  text-align: right;
+}
+
+.slider__poke {
+  width: 100%;
+  text-align: center;
 }
