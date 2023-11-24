@@ -21,3 +21,20 @@ body.both {
 .body.improv {
   background-color: var(--color-improv);
 }
+
+.wrapper {
+  box-sizing: border-box;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em;
+  font-size: 1em;
+  text-align: justify;
+}
+
+.in-short {
+  font-weight: bold;
+  padding-left: 3em;
+}
