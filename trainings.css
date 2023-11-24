@@ -1,0 +1,23 @@
+body {
+  background-color: white;
+}
+
+.body.business {
+  background-color: var(--color-business);
+}
+
+.body.business-improv {
+  background-color: var(--color-business-improv);
+}
+
+body.both {
+  background-color: var(--color-both);
+}
+
+.body.improv-business {
+  background-color: var(--color-improv-business);
+}
+
+.body.improv {
+  background-color: var(--color-improv);
+}
