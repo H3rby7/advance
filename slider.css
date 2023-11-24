@@ -158,4 +158,9 @@ a.slide__next,
 .slider__poke {
   width: 100%;
   text-align: center;
+  font-size: 4em;
+  font-weight: bold;
+  position: relative;
+  top: -0.3em;
+  z-index: 5;
 }
