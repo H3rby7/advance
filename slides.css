@@ -1,5 +1,6 @@
 .slide {
   font-size: 1.5em;
+  padding: 1em;
 }
 
 .slide h1 {
@@ -13,6 +14,7 @@
 }
 
 .trainer {
+  box-sizing: border-box;
   display: block;
   overflow: hidden;
   width: 100%;
