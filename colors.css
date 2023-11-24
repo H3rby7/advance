@@ -1,0 +1,26 @@
+:root {
+  --rgb-business-red: 0;
+  --rgb-business-green: 160;
+  --rgb-business-blue: 228;
+  --rgb-improv-red: 88;
+  --rgb-improv-green: 228;
+  --rgb-improv-blue: 0;
+  --color-business: rgb(var(--rgb-business-red), var(--rgb-business-green), var(--rgb-business-blue));
+  --color-business-improv: rgb(
+    calc((2 * var(--rgb-business-red) + 1 * var(--rgb-improv-red)) / 3),
+    calc((2 * var(--rgb-business-green) + 1 * var(--rgb-improv-green)) / 3),
+    calc((2 * var(--rgb-business-blue) + 1 * var(--rgb-improv-blue)) / 3)
+    );
+  --color-both: rgb(
+    calc((1 * var(--rgb-business-red) + 1 * var(--rgb-improv-red)) / 2),
+    calc((1 * var(--rgb-business-green) + 1 * var(--rgb-improv-green)) / 2),
+    calc((1 * var(--rgb-business-blue) + 1 * var(--rgb-improv-blue)) / 2)
+  );
+  --color-improv-business: rgb(
+    calc((1 * var(--rgb-business-red) + 2 * var(--rgb-improv-red)) / 3),
+    calc((1 * var(--rgb-business-green) + 2 * var(--rgb-improv-green)) / 3),
+    calc((1 * var(--rgb-business-blue) + 2 * var(--rgb-improv-blue)) / 3)
+  );
+  --color-improv: rgb(var(--rgb-improv-red), var(--rgb-improv-green), var(--rgb-improv-blue));
+  --slider-gradient-at: 85%;
+}
