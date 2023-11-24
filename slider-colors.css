@@ -22,26 +22,31 @@
     calc((1 * var(--rgb-business-blue) + 2 * var(--rgb-improv-blue)) / 3)
   );
   --color-improv: rgb(var(--rgb-improv-red), var(--rgb-improv-green), var(--rgb-improv-blue));
+  --slider-gradient-at: 85%;
 }
 
 .slide:nth-child(1),
 .slider__navlink:nth-child(1) {
   background-color: var(--color-business);
+  background: linear-gradient(90deg, var(--color-business) var(--slider-gradient-at), var(--color-business-improv) 100%);
 }
 
 .slide:nth-child(2),
 .slider__navlink:nth-child(2) {
   background-color: var(--color-business-improv);
+  background: linear-gradient(90deg, var(--color-business-improv) 0%, var(--color-business-improv) var(--slider-gradient-at), var(--color-both) 100%);
 }
 
 .slide:nth-child(3),
 .slider__navlink:nth-child(3) {
   background-color: var(--color-both);
+  background: linear-gradient(90deg, var(--color-both) 0%, var(--color-both) var(--slider-gradient-at), var(--color-improv-business) 100%);
 }
 
 .slide:nth-child(4),
 .slider__navlink:nth-child(4) {
   background-color: var(--color-improv-business);
+  background: linear-gradient(90deg, var(--color-improv-business) 0%, var(--color-improv-business) var(--slider-gradient-at), var(--color-improv) 100%);
 }
 
 .slide:nth-child(5),
