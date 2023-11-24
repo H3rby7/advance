@@ -1,16 +1,29 @@
 (() => {
   console.log("Scripts loading...");
-  const sliders = document.getElementsByClassName("slider__navlink");
-  for (let i = 0; i < sliders.length; i++) {
-    const element = sliders[i];
-    element.addEventListener("click", () => {
-      for (let o = 0; o < sliders.length; o++) {
-        sliders[o].classList.remove("active");
+
+  window.addEventListener('hashchange', function () {
+    updateSlider(getAnchor());
+  });
+  updateSlider(getAnchor());
+
+  function updateSlider(nextActive) {
+    if (!nextActive) {
+      return;
+    }
+    const sliders = document.getElementsByClassName("slider__navlink");
+    for (let i = 0; i < sliders.length; i++) {
+      const element = sliders[i];
+      if (element.hash === `#${nextActive}`) {
+        element.classList.add("active");
+      } else {
+        element.classList.remove("active");
       }
-      element.classList.add("active");
-    });
+    }
   }
-  //TODO: set to whatever the URI has
-  console.warn("Setting slider to middle");
-  sliders[2].click();
+
+  function getAnchor() {
+    var currentUrl = document.URL,
+      urlParts = currentUrl.split('#');
+    return (urlParts.length > 1) ? urlParts[1] : null;
+  }
 })();
