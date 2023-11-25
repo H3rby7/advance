@@ -38,3 +38,15 @@ body.both {
   font-weight: bold;
   padding-left: 3em;
 }
+
+button.buy {
+  font-size: 2em;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  background: linear-gradient(
+    149deg,
+    rgb(247, 0, 255) 0%,
+    rgb(255, 145, 0) 100%
+  );
+  border-radius: 1.5em;
+}
